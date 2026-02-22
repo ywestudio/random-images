@@ -1,1 +1,41 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin:0;
+  background:black;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+img {
+  max-width:100%;
+  max-height:100%;
+}
+</style>
+</head>
+<body>
+
+<img id="randomImage">
+
+<script>
+const images = [
+  "https://drive.google.com/uc?export=view&id=1jy6-cZamvrxyGzMPTqX9vuMzGb4mfjaa",
+  "https://drive.google.com/uc?export=view&id=1Dcj4hehUtf_PnXQdn-k8IegZQ1YVuroJ",
+  "https://drive.google.com/uc?export=view&id=1HV4pfPIgusOabc103Dd4dPByNUNx0rdR",
+  "https://drive.google.com/uc?export=view&id=1sqOLxqWYFd9jF8Ya6-9Cj_Hu-OIyBF_X",
+  "https://drive.google.com/uc?export=view&id=1ypPVDVjI9yB_npj3AzbJUiPHYF5XOHQS",
+  "https://drive.google.com/uc?export=view&id=1W3vrFQR9MVqwlxm6SlAQZN4nm5cpYPHN",
+  "https://drive.google.com/uc?export=view&id=13bdgTyqt0NWPjj62cbP9swJ1BHDSPX2S"
+];
+
+const randomImage = images[Math.floor(Math.random() * images.length)];
+document.getElementById("randomImage").src = randomImage;
+</script>
+
+</body>
+</html>
